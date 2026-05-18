@@ -1,8 +1,12 @@
 def maxProfit(prices):
+    l, r = 0, 1
     maxP = 0
-    for i in range(len(prices)):
-        for j in range(i, len(prices)):
-            maxP = max(maxP, prices[j] - prices[i])
+    while r < len(prices):
+        if prices[l] < prices[r]:
+            maxP = max(maxP, prices[r] - prices[l])
+        if prices[l] > prices[r] and r + 1 < len(prices):
+            l = r
+        r += 1
     print(maxP)
 
 prices = [10,1,5,6,7,1]
