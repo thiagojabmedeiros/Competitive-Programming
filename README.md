@@ -1,2 +1,2 @@
-# LeetCodeExercises
-Praticing algorithms and data structures with leet code exercises
+# LeetCode&&HackerRankExercises
+Praticing algorithms and data structures with leetcode and hackerrank exercises
