@@ -11,3 +11,5 @@ while x != xv - 1:
         x = 0
     print(s1[x])
     x += 1
+    if x == xv - 1:
+        print(s1[x])
